@@ -1,0 +1,101 @@
+.app {
+  min-height: 100vh; /* Make the app fill the whole viewport height */
+  background-image: url('https://d3qvqlc701gzhm.cloudfront.net/gallery/dccc0ae1ef6d49916e4cfe8e1bca8ee9ec1769ac8e581e4b15e1234a0ac09020.jpg');
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  position: relative;
+}
+
+.app::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5); /* Adjust transparency as needed */
+  z-index: 0;
+}
+
+.app-header,
+.event-cards-container {
+  position: relative;
+  z-index: 1;
+}
+
+
+.header-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+.app-title {
+  color: #110d0d; /* Choose a color that stands out on your header background */
+  font-size: 48px; /* Adjust as needed */
+  margin: 0;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.app {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 16px;
+  background: url('path-to-your-background-image') no-repeat center center;
+  background-size: cover;
+}
+
+.event-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 50px; /* Adjust based on your header size */
+}
+

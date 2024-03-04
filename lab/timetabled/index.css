@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh; 
+}
+
+th {
+  width: 120px;
+  padding-top:25px;
+  padding-bottom:30px;
+}
+
+td {
+  padding: 5px;
+}
+
+.time {
+  height: 40px;
+}
+
+/* Base event styling */
+.Event {
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+  /* other base styles for the event */
+}
+
+/* Color specific styles */
+.Event.green {
+  background-color: lightblue;
+  color: white; /* Assuming you want the text color to be white */
+}
+
+.Event.red {
+  background-color: red;
+  color: white;
+}
+
+.Event.blue {
+  background-color: blue;
+  color: white;
+}
+
+/* Add other colors as needed */
