@@ -1,0 +1,103 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* Add your background image to the body element */
+  background: url('https://wallpapers.com/images/hd/high-resolution-world-map-country-flags-my4ymxztox3jjdhl.jpg') no-repeat center center fixed; 
+  background-size: cover;
+  overflow: auto; /* Scrollbars will only appear when needed */
+}
+
+#root, .App {
+  min-height: 100vh; /* This ensures that your app fills the entire viewport height */
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.App-header {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  color: #3a3a3a;
+  margin-bottom: 0.5rem;
+}
+
+.card-container {
+  background-color: #defede; /* Adjust the color to match your theme */
+  border-radius: 10px;
+  padding: 2rem;
+  display: inline-block;
+}
+
+.card {
+  background-color: #e6ffe6; /* Light green background, adjust as necessary */
+  border-radius: 5px;
+  padding: 2em;
+  margin-bottom: 2em;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* subtle shadow to lift the card off the page */
+}
+
+.next-button {
+  background-color: #4caf53; /* Green button */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 300ms;
+}
+
+.next-button:hover {
+  background-color: #45a074; /* Darker green on hover */
+}
+
+.App {
+  min-height: 100vh;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background: url('https://wallpapers.com/images/hd/high-resolution-world-map-country-flags-my4ymxztox3jjdhl.jpg') no-repeat center center fixed; 
+  background-size: cover; /* Cover the entire space of the element */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+}
+
+
+/* Remove unnecessary styles */
+/*
+.logo {
+}
+
+.logo:hover {
+}
+
+.logo.react:hover {
+}
+
+@keyframes logo-spin {
+}
+
+@media (prefers-reduced-motion: no-preference) {
+}
+
+.read-the-docs {
+}
+*/
+
