@@ -1,0 +1,76 @@
+/* FlipCard.css */
+.flip-card {
+    background-color: transparent;
+    width: 200px; /* Adjust based on your preference */
+    height: 200px; /* Adjust based on your preference */
+    perspective: 1000px; /* Gives a nice effect on the flip */
+    margin: auto; /* Center the card */
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card.flipped .flip-card-inner {
+    transform: rotateX(180deg); /* This will flip the card */
+  }
+  
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* This hides the back side when facing away */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em; /* Adjust size of the text */
+  }
+  
+  .flip-card-front {
+    background-color: #bbb; /* Your choice of color */
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9; /* Your choice of color */
+    color: white;
+    transform: rotateX(180deg); /* Aligns the back card properly */
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9; /* Your choice of color */
+    color: white;
+    transform: rotateX(180deg); /* Aligns the back card properly */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Aligns children to the end of the main axis */
+    align-items: center; /* Centers children along the cross axis */
+
+  }
+  
+  .answer-input {
+    position: absolute; /* Positions the input field and button absolutely within the front of the card */
+    bottom: 10px; /* Positions the input field and button 10px from the bottom of the front of the card */
+    left: 50%; /* Positions the input field and button in the center horizontally */
+    transform: translateX(-50%); /* Adjusts the position to truly center the input field and button */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .answer-input input {
+    width: 100px; /* Adjusts the width of the input field */
+    height: 20px; /* Adjusts the height of the input field */
+  }
+  
+  .answer-input button {
+    padding: 5px 10px; /* Adjusts the padding of the button */
+    font-size: 12px; /* Adjusts the font size of the button */
+  }
+
+  

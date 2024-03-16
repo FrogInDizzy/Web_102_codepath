@@ -1,0 +1,38 @@
+.quiz-container {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 0.5em;
+  }
+  
+  p {
+    margin-bottom: 2em;
+  }
+  
+  .card-info {
+    margin-bottom: 2em;
+  }
+  
+  .start-btn {
+    padding: 1em 2em;
+    background-color: #4CAF50; /* Customize your button color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .start-btn:hover {
+    background-color: #367c39; /* Darker shade for hover effect */
+  }
+  
